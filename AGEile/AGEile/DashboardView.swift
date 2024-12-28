@@ -1,21 +1,31 @@
 import SwiftUI
+import CoreMotion
 
 struct DashboardView: View {
     @ObservedObject var motionManager: MotionManager
     @Binding var isMonitoring: Bool
     
-    // Example hard-coded balance index value
-    private let balanceIndex: Double = 75.0 // Replace with actual balance index
+    // User Data from AppStorage
+    @AppStorage("email") private var email: String = "user@example.com"
+    @AppStorage("age") private var age: String = "28"
+    @AppStorage("weight") private var weight: String = "75 kg"
+    @AppStorage("height") private var height: String = "180 cm"
+    @AppStorage("heartRate") private var heartRate: String = "72 bpm"
     
-    // Define columns for Masonry layout
+    @State private var weather: String = "Loading..."
+    @State private var temperature: String = "Loading..."
+    @State private var hazardousRisk: String = "Loading..."
+    @State private var walkingInsights: String = "Loading walking insights..."
+    @State private var gaitIrregularities: String = "Loading gait irregularities..."
+    
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-
+    
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            VStack(spacing: 25) {
                 // Greeting and Title
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {
@@ -26,58 +36,126 @@ struct DashboardView: View {
                     }
                     Spacer()
                 }
-                .padding(.bottom, 10)
-
-                // Balance Index Section (Moved to the top)
-                VStack {
-                    Text("Balance Index")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-
-                    Text("\(balanceIndex, specifier: "%.1f")")
-                        .font(.largeTitle)
-                        .bold()
-                        .foregroundColor(balanceColor(for: balanceIndex)) // Color coding based on index
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color(UIColor.systemGray6))
-                        .cornerRadius(10)
-                        .shadow(color: .gray.opacity(0.2), radius: 5, x: 0, y: 2)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.blue, lineWidth: 2) // Outline effect
-                        )
-                }
-                .padding(.horizontal) // Add horizontal padding
+                .padding(.bottom, 15)
                 
-                // User Profile Section (hard-coded values)
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("User Profile")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                    
-                    // Masonry layout for user data
-                    LazyVGrid(columns: columns, spacing: 15) {
-                        ProfileItemView(title: "Email", value: "user@example.com", icon: "envelope.fill")
-                        ProfileItemView(title: "Age", value: "28", icon: "person.fill")
-                        ProfileItemView(title: "Weight", value: "75 kg", icon: "scalemass.fill")
-                        ProfileItemView(title: "Height", value: "180 cm", icon: "arrow.up.and.down.circle.fill")
-                        ProfileItemView(title: "Steps Today", value: "10,000", icon: "figure.walk")
-                        ProfileItemView(title: "Heart Rate", value: "72 bpm", icon: "heart.fill")
+                // Key Walking Insights
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Image(systemName: "figure.walk")
+                            .foregroundColor(.blue)
+                            .font(.title2)
+                        
+                        Text("Key Walking Insights & Corrections")
+                            .font(.title2)
+                            .foregroundColor(.primary)
+                            .bold()
                     }
+
+                    Text(walkingInsights)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                        .padding()
+                        .background(Color(UIColor.systemGray5))
+                        .cornerRadius(12)
+                        .shadow(radius: 4)
                 }
-                .padding()
-                .background(Color(UIColor.systemGray6))
-                .cornerRadius(12)
-                .shadow(color: Color.primary.opacity(0.1), radius: 8, x: 0, y: 4)
-                
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+                // Gait Irregularities Detected
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .foregroundColor(.red)
+                            .font(.title2)
+                        
+                        Text("Gait Irregularities Detected")
+                            .font(.title2)
+                            .foregroundColor(.primary)
+                            .bold()
+                    }
+
+                    Text(gaitIrregularities)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                        .padding()
+                        .background(Color(UIColor.systemGray5))
+                        .cornerRadius(12)
+                        .shadow(radius: 4)
+                }
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+                // Weather and Risks
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Image(systemName: "cloud.sun.fill")
+                            .foregroundColor(.yellow)
+                            .font(.title2)
+                        
+                        Text("Weather and Risks")
+                            .font(.title2)
+                            .foregroundColor(.primary)
+                            .bold()
+                    }
+
+                    HStack {
+                        Text("Weather: \(weather)")
+                            .font(.body)
+                            .foregroundColor(.primary)
+                        Text("Temp: \(temperature)°C")
+                            .font(.body)
+                            .foregroundColor(.blue)
+                    }
+
+                    Text("Risk: \(hazardousRisk)")
+                        .font(.body)
+                        .foregroundColor(hazardousRisk.contains("High") ? .red : .green)
+                        .padding()
+                        .background(Color(UIColor.systemGray5))
+                        .cornerRadius(12)
+                        .shadow(radius: 4)
+                }
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+                // Hazardous Situations Detected
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .foregroundColor(.orange)
+                            .font(.title2)
+                        
+                        Text("Hazardous Situations Detected")
+                            .font(.title2)
+                            .foregroundColor(.primary)
+                            .bold()
+                    }
+
+                    Text("No hazards detected.")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                        .padding()
+                        .background(Color(UIColor.systemGray5))
+                        .cornerRadius(12)
+                        .shadow(radius: 4)
+                }
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
                 // Monitoring Status
-                VStack(spacing: 8) {
+                VStack(spacing: 18) {
                     if isMonitoring {
-                        Text("Monitoring in Progress")
-                            .font(.headline)
-                            .foregroundColor(.green)
-                            .padding(.vertical, 5)
+                        HStack {
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundColor(.green)
+                                .font(.title2)
+                            
+                            Text("Monitoring in Progress")
+                                .font(.headline)
+                                .foregroundColor(.green)
+                                .padding(.vertical, 5)
+                        }
 
                         NavigationLink(destination: MotionManagerView(motionManager: motionManager)) {
                             Text("Go to Motion Manager")
@@ -86,13 +164,20 @@ struct DashboardView: View {
                                 .frame(maxWidth: .infinity)
                                 .background(Color.green.opacity(0.8))
                                 .foregroundColor(.white)
-                                .cornerRadius(10)
+                                .cornerRadius(12)
+                                .shadow(radius: 6)
                         }
                     } else {
-                        Text("Monitoring is not active.")
-                            .font(.headline)
-                            .foregroundColor(.red)
-                            .padding(.vertical, 5)
+                        HStack {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.red)
+                                .font(.title2)
+                            
+                            Text("Monitoring is not active.")
+                                .font(.headline)
+                                .foregroundColor(.red)
+                                .padding(.vertical, 5)
+                        }
 
                         Button(action: {
                             isMonitoring = true
@@ -104,29 +189,40 @@ struct DashboardView: View {
                                 .frame(maxWidth: .infinity)
                                 .background(Color.blue)
                                 .foregroundColor(.white)
-                                .cornerRadius(10)
+                                .cornerRadius(12)
+                                .shadow(radius: 6)
                         }
                     }
                 }
-                .padding(.top, 10)
+                .padding(.horizontal)
+                .padding(.top, 15)
+                .frame(maxWidth: .infinity, alignment: .center)
             }
-            .padding()
+            .padding(.horizontal)
         }
         .background(Color(UIColor.systemBackground).ignoresSafeArea())
+        .onAppear {
+            fetchWeatherData() // Fetch data when the view appears
+            fetchWalkingInsights() // Fetch walking insights
+            fetchGaitIrregularities() // Fetch gait irregularities
+        }
+    }
+
+    func fetchWeatherData() {
+        // Simulate weather data
+        weather = "Clear Sky"
+        temperature = "22"
+        hazardousRisk = "Low Risk" // Or "High Risk" based on weather data
+    }
+
+    func fetchWalkingInsights() {
+        // Simulate walking insights
+        walkingInsights = "Walking Pace: Normal | Stride Length: Short" // Placeholder
     }
     
-    // Function to determine color based on balance index
-    private func balanceColor(for index: Double) -> Color {
-        switch index {
-        case ..<50:
-            return .red // Low balance
-        case 50..<75:
-            return .orange // Medium balance
-        case 75...:
-            return .green // High balance
-        default:
-            return .gray // Default case
-        }
+    func fetchGaitIrregularities() {
+        // Simulate gait irregularities
+        gaitIrregularities = "Irregular gait detected: uneven stride length, possible limp on left leg." // Placeholder
     }
 }
 
@@ -134,7 +230,6 @@ struct ProfileItemView: View {
     var title: String
     var value: String
     var icon: String
-    var balanceColor: Color? // Optional balance color
 
     var body: some View {
         HStack {
@@ -147,20 +242,13 @@ struct ProfileItemView: View {
                     .foregroundColor(.secondary)
                 Text(value)
                     .font(.headline)
-                    .foregroundColor(balanceColor ?? .primary) // Use balance color if available
+                    .foregroundColor(.primary)
             }
         }
         .padding()
-        .background(Color(UIColor.systemGray6))
-        .cornerRadius(10)
-        .shadow(color: .gray.opacity(0.2), radius: 5, x: 0, y: 2)
-    }
-}
-
-struct DashboardView_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardView(motionManager: MotionManager(), isMonitoring: .constant(false))
-            .preferredColorScheme(.dark) // Preview in dark mode
+        .background(Color(UIColor.systemGray5))
+        .cornerRadius(12)
+        .shadow(radius: 5)
     }
 }
 

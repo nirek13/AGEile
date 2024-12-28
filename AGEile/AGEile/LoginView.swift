@@ -7,7 +7,7 @@ struct LoginView: View {
     @State private var errorMessage = ""
     @State private var isLoggedIn = false
     @State private var showSignup = false  // State variable to trigger SignupView
-
+    let persistenceController = PersistenceController.shared
     var body: some View {
         VStack(spacing: 20) {
             Text("Login").font(.largeTitle).bold()
@@ -42,12 +42,14 @@ struct LoginView: View {
             
             Spacer()
             
-            NavigationLink(destination: HomeView(), isActive: $isLoggedIn) {
-                EmptyView()
+            NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true).environment(\.managedObjectContext, persistenceController.container.viewContext), isActive: $isLoggedIn) {
+                EmptyView().environment(\.managedObjectContext, persistenceController.container.viewContext) // Pass the context to the environment
+            
             }
             
-            NavigationLink(destination: SignupView(), isActive: $showSignup) {
-                EmptyView()
+            NavigationLink(destination: SignupView().navigationBarBackButtonHidden(true).environment(\.managedObjectContext, persistenceController.container.viewContext), isActive: $showSignup) {
+                EmptyView().environment(\.managedObjectContext, persistenceController.container.viewContext) // Pass the context to the environment
+            
             }
 
         }

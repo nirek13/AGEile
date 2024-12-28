@@ -16,7 +16,7 @@ struct AGEileApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                LoginView()
+                LoginView().navigationBarBackButtonHidden(true)
             }
         }
     }

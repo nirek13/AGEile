@@ -13,6 +13,8 @@
 		5F707CBB2CCEBF4300E76027 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CBA2CCEBF4300E76027 /* FirebaseCore */; };
 		5F707CBD2CCEBF4300E76027 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CBC2CCEBF4300E76027 /* FirebaseStorage */; };
 		5F707CD32CD1901700E76027 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CD22CD1901700E76027 /* FirebaseFirestore */; };
+		5FEA14AA2D1A1E4E0044CC65 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */; };
+		5FEA14AD2D1A38E50044CC65 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5FEA14AC2D1A38E50044CC65 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +95,9 @@
 				5F707CB72CCEBF4300E76027 /* FirebaseAppCheck in Frameworks */,
 				5F707CB92CCEBF4300E76027 /* FirebaseAuth in Frameworks */,
 				5F707CBB2CCEBF4300E76027 /* FirebaseCore in Frameworks */,
+				5FEA14AD2D1A38E50044CC65 /* MarkdownUI in Frameworks */,
 				5F707CBD2CCEBF4300E76027 /* FirebaseStorage in Frameworks */,
+				5FEA14AA2D1A1E4E0044CC65 /* GoogleGenerativeAI in Frameworks */,
 				5F707CB52CCEBF4300E76027 /* FirebaseAnalytics in Frameworks */,
 				5F707CD32CD1901700E76027 /* FirebaseFirestore in Frameworks */,
 			);
@@ -162,6 +166,8 @@
 				5F707CBA2CCEBF4300E76027 /* FirebaseCore */,
 				5F707CBC2CCEBF4300E76027 /* FirebaseStorage */,
 				5F707CD22CD1901700E76027 /* FirebaseFirestore */,
+				5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */,
+				5FEA14AC2D1A38E50044CC65 /* MarkdownUI */,
 			);
 			productName = AGEile;
 			productReference = 5F707C792CCEB9CB00E76027 /* AGEile.app */;
@@ -247,6 +253,9 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5F137E0A2CEBF5FD00F542CE /* XCRemoteSwiftPackageReference "OpenAI" */,
+				5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F707C7A2CCEB9CB00E76027 /* Products */;
@@ -619,12 +628,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5F137E0A2CEBF5FD00F542CE /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 		5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.4.0;
+			};
+		};
+		5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -659,6 +692,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		5FEA14AC2D1A38E50044CC65 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
