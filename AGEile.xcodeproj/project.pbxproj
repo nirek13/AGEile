@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F707CB52CCEBF4300E76027 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CB42CCEBF4300E76027 /* FirebaseAnalytics */; };
+		5F707CB72CCEBF4300E76027 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CB62CCEBF4300E76027 /* FirebaseAppCheck */; };
+		5F707CB92CCEBF4300E76027 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CB82CCEBF4300E76027 /* FirebaseAuth */; };
+		5F707CBB2CCEBF4300E76027 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CBA2CCEBF4300E76027 /* FirebaseCore */; };
+		5F707CBD2CCEBF4300E76027 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CBC2CCEBF4300E76027 /* FirebaseStorage */; };
+		5F707CD32CD1901700E76027 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5F707CD22CD1901700E76027 /* FirebaseFirestore */; };
+		5FEA14AA2D1A1E4E0044CC65 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */; };
+		5FEA14AD2D1A38E50044CC65 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5FEA14AC2D1A38E50044CC65 /* MarkdownUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F707C8E2CCEB9CD00E76027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F707C712CCEB9CB00E76027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F707C782CCEB9CB00E76027;
+			remoteInfo = AGEile;
+		};
+		5F707C982CCEB9CD00E76027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F707C712CCEB9CB00E76027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F707C782CCEB9CB00E76027;
+			remoteInfo = AGEile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F707C792CCEB9CB00E76027 /* AGEile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGEile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F707C8D2CCEB9CD00E76027 /* AGEileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGEileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F707C972CCEB9CD00E76027 /* AGEileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGEileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5F707C9F2CCEB9CD00E76027 /* Exceptions for "AGEile" folder in "AGEile" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5F707C782CCEB9CB00E76027 /* AGEile */;
+		};
+		5F707CB12CCEBDC000E76027 /* Exceptions for "AGEile" folder in "AGEileTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 5F707C8C2CCEB9CD00E76027 /* AGEileTests */;
+		};
+		5F707CB22CCEBDC000E76027 /* Exceptions for "AGEile" folder in "AGEileUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 5F707C962CCEB9CD00E76027 /* AGEileUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5F707C7B2CCEB9CB00E76027 /* AGEile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5F707C9F2CCEB9CD00E76027 /* Exceptions for "AGEile" folder in "AGEile" target */,
+				5F707CB12CCEBDC000E76027 /* Exceptions for "AGEile" folder in "AGEileTests" target */,
+				5F707CB22CCEBDC000E76027 /* Exceptions for "AGEile" folder in "AGEileUITests" target */,
+			);
+			path = AGEile;
+			sourceTree = "<group>";
+		};
+		5F707C902CCEB9CD00E76027 /* AGEileTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AGEileTests;
+			sourceTree = "<group>";
+		};
+		5F707C9A2CCEB9CD00E76027 /* AGEileUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AGEileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F707C762CCEB9CB00E76027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F707CB72CCEBF4300E76027 /* FirebaseAppCheck in Frameworks */,
+				5F707CB92CCEBF4300E76027 /* FirebaseAuth in Frameworks */,
+				5F707CBB2CCEBF4300E76027 /* FirebaseCore in Frameworks */,
+				5FEA14AD2D1A38E50044CC65 /* MarkdownUI in Frameworks */,
+				5F707CBD2CCEBF4300E76027 /* FirebaseStorage in Frameworks */,
+				5FEA14AA2D1A1E4E0044CC65 /* GoogleGenerativeAI in Frameworks */,
+				5F707CB52CCEBF4300E76027 /* FirebaseAnalytics in Frameworks */,
+				5F707CD32CD1901700E76027 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C8A2CCEB9CD00E76027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C942CCEB9CD00E76027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F707C702CCEB9CB00E76027 = {
+			isa = PBXGroup;
+			children = (
+				5F707C7B2CCEB9CB00E76027 /* AGEile */,
+				5F707C902CCEB9CD00E76027 /* AGEileTests */,
+				5F707C9A2CCEB9CD00E76027 /* AGEileUITests */,
+				5F707C7A2CCEB9CB00E76027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F707C7A2CCEB9CB00E76027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F707C792CCEB9CB00E76027 /* AGEile.app */,
+				5F707C8D2CCEB9CD00E76027 /* AGEileTests.xctest */,
+				5F707C972CCEB9CD00E76027 /* AGEileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F707C782CCEB9CB00E76027 /* AGEile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F707CA02CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEile" */;
+			buildPhases = (
+				5F707C752CCEB9CB00E76027 /* Sources */,
+				5F707C762CCEB9CB00E76027 /* Frameworks */,
+				5F707C772CCEB9CB00E76027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5F707C7B2CCEB9CB00E76027 /* AGEile */,
+			);
+			name = AGEile;
+			packageProductDependencies = (
+				5F707CB42CCEBF4300E76027 /* FirebaseAnalytics */,
+				5F707CB62CCEBF4300E76027 /* FirebaseAppCheck */,
+				5F707CB82CCEBF4300E76027 /* FirebaseAuth */,
+				5F707CBA2CCEBF4300E76027 /* FirebaseCore */,
+				5F707CBC2CCEBF4300E76027 /* FirebaseStorage */,
+				5F707CD22CD1901700E76027 /* FirebaseFirestore */,
+				5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */,
+				5FEA14AC2D1A38E50044CC65 /* MarkdownUI */,
+			);
+			productName = AGEile;
+			productReference = 5F707C792CCEB9CB00E76027 /* AGEile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F707C8C2CCEB9CD00E76027 /* AGEileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F707CA52CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEileTests" */;
+			buildPhases = (
+				5F707C892CCEB9CD00E76027 /* Sources */,
+				5F707C8A2CCEB9CD00E76027 /* Frameworks */,
+				5F707C8B2CCEB9CD00E76027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F707C8F2CCEB9CD00E76027 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5F707C902CCEB9CD00E76027 /* AGEileTests */,
+			);
+			name = AGEileTests;
+			packageProductDependencies = (
+			);
+			productName = AGEileTests;
+			productReference = 5F707C8D2CCEB9CD00E76027 /* AGEileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F707C962CCEB9CD00E76027 /* AGEileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F707CA82CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEileUITests" */;
+			buildPhases = (
+				5F707C932CCEB9CD00E76027 /* Sources */,
+				5F707C942CCEB9CD00E76027 /* Frameworks */,
+				5F707C952CCEB9CD00E76027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F707C992CCEB9CD00E76027 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5F707C9A2CCEB9CD00E76027 /* AGEileUITests */,
+			);
+			name = AGEileUITests;
+			packageProductDependencies = (
+			);
+			productName = AGEileUITests;
+			productReference = 5F707C972CCEB9CD00E76027 /* AGEileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F707C712CCEB9CB00E76027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5F707C782CCEB9CB00E76027 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					5F707C8C2CCEB9CD00E76027 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5F707C782CCEB9CB00E76027;
+					};
+					5F707C962CCEB9CD00E76027 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5F707C782CCEB9CB00E76027;
+					};
+				};
+			};
+			buildConfigurationList = 5F707C742CCEB9CB00E76027 /* Build configuration list for PBXProject "AGEile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F707C702CCEB9CB00E76027;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5F137E0A2CEBF5FD00F542CE /* XCRemoteSwiftPackageReference "OpenAI" */,
+				5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5F707C7A2CCEB9CB00E76027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F707C782CCEB9CB00E76027 /* AGEile */,
+				5F707C8C2CCEB9CD00E76027 /* AGEileTests */,
+				5F707C962CCEB9CD00E76027 /* AGEileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F707C772CCEB9CB00E76027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C8B2CCEB9CD00E76027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C952CCEB9CD00E76027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F707C752CCEB9CB00E76027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C892CCEB9CD00E76027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F707C932CCEB9CD00E76027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F707C8F2CCEB9CD00E76027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F707C782CCEB9CB00E76027 /* AGEile */;
+			targetProxy = 5F707C8E2CCEB9CD00E76027 /* PBXContainerItemProxy */;
+		};
+		5F707C992CCEB9CD00E76027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F707C782CCEB9CB00E76027 /* AGEile */;
+			targetProxy = 5F707C982CCEB9CD00E76027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F707CA12CCEB9CD00E76027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AGEile/AGEile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AGEile/Preview Content\"";
+				DEVELOPMENT_TEAM = C42KJYH277;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AGEile/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to detect trip hazards in your environment.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F707CA22CCEB9CD00E76027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AGEile/AGEile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AGEile/Preview Content\"";
+				DEVELOPMENT_TEAM = C42KJYH277;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AGEile/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to detect trip hazards in your environment.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F707CA32CCEB9CD00E76027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F707CA42CCEB9CD00E76027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F707CA62CCEB9CD00E76027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGEile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AGEile";
+			};
+			name = Debug;
+		};
+		5F707CA72CCEB9CD00E76027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AGEile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AGEile";
+			};
+			name = Release;
+		};
+		5F707CA92CCEB9CD00E76027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AGEile;
+			};
+			name = Debug;
+		};
+		5F707CAA2CCEB9CD00E76027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.nirekshetty.AGEileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AGEile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F707C742CCEB9CB00E76027 /* Build configuration list for PBXProject "AGEile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F707CA32CCEB9CD00E76027 /* Debug */,
+				5F707CA42CCEB9CD00E76027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F707CA02CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F707CA12CCEB9CD00E76027 /* Debug */,
+				5F707CA22CCEB9CD00E76027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F707CA52CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F707CA62CCEB9CD00E76027 /* Debug */,
+				5F707CA72CCEB9CD00E76027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F707CA82CCEB9CD00E76027 /* Build configuration list for PBXNativeTarget "AGEileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F707CA92CCEB9CD00E76027 /* Debug */,
+				5F707CAA2CCEB9CD00E76027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F137E0A2CEBF5FD00F542CE /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+		5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F707CB42CCEBF4300E76027 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5F707CB62CCEBF4300E76027 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		5F707CB82CCEBF4300E76027 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5F707CBA2CCEBF4300E76027 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		5F707CBC2CCEBF4300E76027 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5F707CD22CD1901700E76027 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F707CB32CCEBDD800E76027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5FEA14A92D1A1E4E0044CC65 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FEA14A82D1A1E020044CC65 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		5FEA14AC2D1A38E50044CC65 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FEA14AB2D1A38E50044CC65 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5F707C712CCEB9CB00E76027 /* Project object */;
+}
