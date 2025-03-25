@@ -1,18 +1,19 @@
 
 # AGEile: Innovative Fall Prevention for Seniors
 
-## Pictures 
-
-![Untitled design (1)](ht![IMG_6059](https://github.com/user-attachments/assets/5c6c9631-e5ba-4e9b-8cc1-90ee49c1c493)
-![IMG_6058](https://github.com/user-attachments/assets/3ebad5bf-a2ce-4b91-bbff-53d![IMG_6065](https://github.com/user-attachments/assets/d19c0616-efed-46ab-b98d-fa8c94452513)
-![IMG_6066](https://github.com/user-attachments/assets/76823388-1825-4cb6-b1be-68bc86994771)
-bcff31b1d)
-tps://github.com/user-attachments/assets/b89a0e70-3826-4a59-af20-5ebc1e379618)![IMG_6060](https://github.com/user-attachments/assets/f7ea7013-eaea-4628-ab64-3eb65f66c416)
-![IMG_6061](https://github.com/user-attachments/assets/465a4403-96f1-4643-9da2-e82afe7c42ad)
-![IMG_6062](https://github.com/user-attachments/assets/2d1af374-5ee0-43e7-a1d6-cb7e1ba7d8d2)
-![IMG_6063](https://github.com/user-attachments/assets/b53e6835-a2c8-45b7-9ea6-eaaf43746780)
-![IMG_6064](https://github.com/user-attachments/assets/e7a9ee60-6ca5-4e62-afa3-00bb4963d75c)
-
+AGEile Project Gallery
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5c6c9631-e5ba-4e9b-8cc1-90ee49c1c493" width="200" />
+  <img src="https://github.com/user-attachments/assets/3ebad5bf-a2ce-4b91-bbff-53d" width="200" />
+  <img src="https://github.com/user-attachments/assets/d19c0616-efed-46ab-b98d-fa8c94452513" width="200" />
+  <img src="https://github.com/user-attachments/assets/76823388-1825-4cb6-b1be-68bc86994771" width="200" />
+  <img src="https://github.com/user-attachments/assets/b89a0e70-3826-4a59-af20-5ebc1e379618" width="200" />
+  <img src="https://github.com/user-attachments/assets/f7ea7013-eaea-4628-ab64-3eb65f66c416" width="200" />
+  <img src="https://github.com/user-attachments/assets/465a4403-96f1-4643-9da2-e82afe7c42ad" width="200" />
+  <img src="https://github.com/user-attachments/assets/2d1af374-5ee0-43e7-a1d6-cb7e1ba7d8d2" width="200" />
+  <img src="https://github.com/user-attachments/assets/b53e6835-a2c8-45b7-9ea6-eaaf43746780" width="200" />
+  <img src="https://github.com/user-attachments/assets/e7a9ee60-6ca5-4e62-afa3-00bb4963d75c" width="200" />
+</p>
 
 ## Short Description
 
