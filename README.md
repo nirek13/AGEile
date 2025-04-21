@@ -73,12 +73,3 @@ AGEile is different because it focuses on preventing falls rather than just dete
 AGEile's main challenge is senior adoption, a historically less responsive demographic to new technology. Fortunately, while searching for feedback, all 8 physiotherapists I demonstrated AGEile to expressed interest in launching pilot programs once the technology is finalized, helping introduce it into local senior homes.
 
 Smartphone adoption grew by 11% from 2018 to 2021, signaling a growing market. AGEile's automated, user-friendly interface reduces technological barriers, increasing accessibility.
-
-## Potential Use of Cash Award
-
-If awarded a cash prize, I would use the funds to:
-- Cover cloud computing and storage costs
-- Purchase an Apple Developer License
-- Invest in machine learning compute resources
-- Kickstart pilot programs at local short-term care homes
-- Purchase prototyping tools like 3D printers and soldering irons
